@@ -13,12 +13,16 @@ public class Prestito {
     @ManyToOne
     private Utente utente;
     @ManyToOne
+    @JoinColumn(name = "elementi_catalogo")
     private ElementiCatalogo elementoPrestato;
     @Temporal(TemporalType.DATE)
+    @Column(name = "data_inizio_prestito")
     private Date dataInizioPrestito;
     @Temporal(TemporalType.DATE)
+    @Column(name = "data_restituzione_prevista")
     private Date dataRestituzionePrevista;
     @Temporal(TemporalType.DATE)
+    @Column(name = "data_restituzione_effettiva")
     private Date dataRestituzioneEffettiva;
 
     public Prestito() {

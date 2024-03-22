@@ -49,7 +49,6 @@ public class PrestitoDAO {
         if (prestiti.isEmpty()){
             throw new ExeptionNotFind("non ci prestiti scaduti");
         }
-
         return  prestiti;
     }
 

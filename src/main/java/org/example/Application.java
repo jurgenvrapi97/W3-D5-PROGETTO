@@ -45,7 +45,7 @@ public class Application {
 
         //inserimetno di un prestito
         Prestito prestito1 = new Prestito(utente1,rivista,data,dataRestituzione,null);
-//        pd.savePrestito(prestito1);
+        //pd.savePrestito(prestito1);
 
 
        //eliminazione di un elemento catalogo
@@ -93,12 +93,12 @@ public class Application {
 
 
         //ricerca prestiti attivi dato il nuemro di tessera
-//        try {
-//           List<Prestito> prestiti = pd.findPrestitiByNumeroTessera("1278kI");
-//           prestiti.forEach(System.out::println);
-//        } catch (ExeptionNotFind e){
-//            System.out.println(e.getMessage());
-//        }
+       try {
+           List<Prestito> prestiti = pd.findPrestitiByNumeroTessera("1278kI");
+           prestiti.forEach(System.out::println);
+        } catch (ExeptionNotFind e){
+            System.out.println(e.getMessage());
+        }
 
         //ricerca dei prestiti scaduti
 

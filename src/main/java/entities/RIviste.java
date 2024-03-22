@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class RIviste extends ElementiCatalogo {
     @Column(name = "periodicità")
     private Periodicità periodicità;
-
+    public RIviste(){}
     public RIviste(String codiceISBN, String titolo, int annoPubblicazione, int numeroPagine, Periodicità periodicità) {
         super(codiceISBN, titolo, annoPubblicazione, numeroPagine);
         this.periodicità = periodicità;

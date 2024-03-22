@@ -64,7 +64,7 @@ public abstract class ElementiCatalogo {
                 "codiceISBN='" + codiceISBN + '\'' +
                 ", titolo='" + titolo + '\'' +
                 ", annoPubblicazione=" + annoPubblicazione +
-                ", numeroPagine=" + numeroPagine +
+                ", numeroPagine=" + numeroPagine + "/n"+
                 '}';
     }
 }

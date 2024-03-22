@@ -1,6 +1,9 @@
 package entities;
+
 import jakarta.persistence.*;
+
 import java.util.Date;
+
 @Entity
 @Table(name = "prestito")
 public class Prestito {
@@ -18,7 +21,8 @@ public class Prestito {
     @Temporal(TemporalType.DATE)
     private Date dataRestituzioneEffettiva;
 
-    public Prestito(){}
+    public Prestito() {
+    }
 
     public Prestito(Utente utente, ElementiCatalogo elementoPrestato, Date dataInizioPrestito, Date dataRestituzionePrevista, Date dataRestituzioneEffettiva) {
         this.utente = utente;
@@ -80,11 +84,11 @@ public class Prestito {
     public String toString() {
         return "Prestito{" +
                 "id=" + id +
-                ", utente=" + utente +
-                ", elementoPrestato=" + elementoPrestato +
                 ", dataInizioPrestito=" + dataInizioPrestito +
-                ", dataRestituzionePrevista=" + dataRestituzionePrevista +
                 ", dataRestituzioneEffettiva=" + dataRestituzioneEffettiva +
+                ", dataRestituzionePrevista=" + dataRestituzionePrevista + ", \n"+
+                "utente=" + utente + ", \n" +
+                "elementoPrestato=" + elementoPrestato +
                 '}';
     }
 }

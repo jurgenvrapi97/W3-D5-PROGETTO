@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 @Inheritance(strategy = InheritanceType.JOINED)
 public abstract class ElementiCatalogo {
     @Id
-    @GeneratedValue
+
     @Column(name = "codice_ISBN")
     private String codiceISBN;
     @Column(name = "titolo")
